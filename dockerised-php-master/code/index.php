@@ -4,7 +4,7 @@
 </head>
 <body>
 <script type="text/javascript">
-    window.location = "boosbattle.html";
+    window.location = "bossbattle.html";
 </script>
 </body>
 </html>
