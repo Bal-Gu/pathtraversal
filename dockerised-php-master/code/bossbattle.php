@@ -1,6 +1,48 @@
 <!DOCTYPE html>
 <html>
 <head>
+
+<script src='http://use.edgefonts.net/nosifer.js'></script>
+<title>You're going to die</title>
+<style>
+.bottom-left {
+  position: absolute;
+  bottom: 50px;
+  left: 130px;
+  font-size: 18px;
+  font-family: nosifer;
+  color: red;
+}
+.container {
+  position: relative;
+  text-align: center;
+  color: white;
+}
+
+.spellbook{
+   
+    position: absolute;
+	left: 10px;	
+	bottom: 10px;
+	}
+body  {
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-image: url("1078094-beautiful-the-lich-king-wallpaper-1920x1080-high-resolution.jpg");
+  background-color: #FFFFFF;
+}
+</style>
+</head>
+<body>
+
+
+<div class="spellbook">
+	<a href='spellbook.html'><img src='toppng.com-spell-book-674x313.png'></a>
+</div>
+<div class=bottom-left>
+	Click the Spellbook for help
+</div>
+
 <?php
 
 //get the file through the query parameter
@@ -54,7 +96,7 @@ if ($inputquery) {
         if (strpos($inputquery, "%e0%80%af") !== false) {
             $filterpass = true;
         } else {
-            die("Path Traversal attack detected. This incident will be reported.")
+            die("Path Traversal attack detected. This incident will be reported.");
         }
     } else if (strpos($inputquery, "Boss.jpg") !== false) {
         //no encodings here, but filters not recursive  nested payloads
@@ -70,7 +112,7 @@ if ($inputquery) {
         $file = $file . ".txt";
     } else {
         //we got it, Gandalf
-        die("You shall not pass!")
+        die("You shall not pass!");
     }
 
     if (!file_exists($file)) {
@@ -85,48 +127,6 @@ if ($inputquery) {
     die;
 }
 ?>
-<script src='http://use.edgefonts.net/nosifer.js'></script>
-<title>You're going to die</title>
-<style>
-.bottom-left {
-  position: absolute;
-  bottom: 50px;
-  left: 130px;
-  font-size: 18px;
-  font-family: nosifer;
-  color: red;
-}
-.container {
-  position: relative;
-  text-align: center;
-  color: white;
-}
-
-.spellbook{
-   
-    position: absolute;
-	left: 10px;	
-	bottom: 10px;
-	}
-body  {
-  background-size: cover;
-  background-repeat: no-repeat;
-  background-image: url("1078094-beautiful-the-lich-king-wallpaper-1920x1080-high-resolution.jpg");
-  background-color: #FFFFFF;
-}
-</style>
-</head>
-<body>
-
-
-<div class="spellbook">
-	<a href='spellbook.html'><img src='toppng.com-spell-book-674x313.png'></a>
-</div>
-<div class=bottom-left>
-	Click the Spellbook for help
-</div>
-
-
 
 </body>
 </html>
