@@ -13,6 +13,7 @@ if ($inputquery) {
 
     $filterpass = false;
     $nullbyte = false;
+    $encode = false;
 
     //recursive filter function
     function recursivefilter ($file, $str) {
@@ -34,23 +35,22 @@ if ($inputquery) {
         $file = str_replace("REVERSESW0RD", "\\", $file);
     } else if (strpos($inputquery, "Xray.jpg") !== false) {
         //instead of really long blacklist, we whitelisted some payloads that should pass
-        if (strpos($inputquery, "%252e") !== false) {
+        7//since URL decode is not recurive, this is output of double-url-encoding, whitelisted payload
+        if (strpos($inputquery, "%2e") !== false) {
             $filterpass = true;
+            $encode = true;
         } else
-        if (strpos($inputquery, "%252E") !== false) {
+        if (strpos($inputquery, "%2E") !== false) {
             $filterpass = true;
+            $encode = true;
         } else
-        if (strpos($inputquery, "%252f") !== false) {
+        if (strpos($inputquery, "%2f") !== false) {
             $filterpass = true;
+            $encode = true;
         } else
-        if (strpos($inputquery, "%252F") !== false) {
+        if (strpos($inputquery, "%2F") !== false) {
             $filterpass = true;
-        } else
-        if (strpos($inputquery, "%e0%40%ae") !== false) {
-            $filterpass = true;
-        } else
-        if (strpos($inputquery, "%e0%80%af") !== false) {
-            $filterpass = true;
+            $encode = true;
         } else {
             die($file);
         }
@@ -77,6 +77,14 @@ if ($inputquery) {
     //simulate null byte injection from php 5.1.5
     if ($nullbyte) {
         $file = explode("%00", $file)[0];
+    }
+    
+    if ($encode) {
+        //manually decode a second time
+        $file = str_replace("%2e", ".", $file);
+        $file = str_replace("%2E", ".", $file);
+        $file = str_replace("%2f", "/", $file);
+        $file = str_replace("%2F", "/", $file);
     }
     
     if (!file_exists($file)) {
