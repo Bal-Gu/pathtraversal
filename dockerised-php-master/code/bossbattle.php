@@ -12,6 +12,7 @@ if ($inputquery) {
     $file = $inputquery;
 
     $filterpass = false;
+    $nullbyte = false;
 
     //recursive filter function
     function recursivefilter ($file, $str) {
@@ -65,12 +66,18 @@ if ($inputquery) {
     } else if (strpos($inputquery, "Victory.html") !== false) {
         //null byte injection attack
         $file = $file . ".txt";
+        //we had to simulate the vulnerability, since we can't get the vulnerable php version running
+        $nullbyte = true;
     } else {
         //we got it, Gandalf
         die("You shall not pass!");
     }
 
     $file = "items/" . $file;
+    //simulate null byte injection from php 5.1.5
+    if ($nullbyte) {
+        $file = explode("%00", $file)[0];
+    }
     
     if (!file_exists($file)) {
         http_response_code(404);
