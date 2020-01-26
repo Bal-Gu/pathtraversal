@@ -82,7 +82,7 @@ if ($inputquery) {
     die;
 }
 
-echo='<!DOCTYPE html>
+echo '<!DOCTYPE html>
 <html>
 <head>
 <title> Read the RULES </title>
