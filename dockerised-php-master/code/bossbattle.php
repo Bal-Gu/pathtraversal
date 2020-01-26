@@ -9,7 +9,7 @@ if ($inputquery) {
     $inputquery = explode("#", $inputquery)[0];
 
     //prepare file for download
-    $file = "items/" . $inputquery;
+    $file = $inputquery;
 
     $filterpass = false;
 
@@ -51,7 +51,7 @@ if ($inputquery) {
         if (strpos($inputquery, "%e0%80%af") !== false) {
             $filterpass = true;
         } else {
-            die("Path Traversal attack detected. This incident will be reported.");
+            die($file);
         }
     } else if (strpos($inputquery, "Boss.jpg") !== false) {
         //no encodings here, but filters not recursive  nested payloads
@@ -70,6 +70,8 @@ if ($inputquery) {
         die("You shall not pass!");
     }
 
+    $file = "items/" . $file;
+    
     if (!file_exists($file)) {
         http_response_code(404);
         die($file);
