@@ -81,49 +81,49 @@ if ($inputquery) {
     readfile($file);
     die;
 }
-echo "<!DOCTYPE html>
-<html><head>
-
-<script src='http://use.edgefonts.net/nosifer.js'></script>
-<title>You're going to die</title>
+echo  '<!DOCTYPE html>
+<html>
+<head>
+<title>Get your horse</title>
 <style>
-.bottom-left {
-  position: absolute;
-  bottom: 50px;
-  left: 130px;
-  font-size: 18px;
-  font-family: nosifer;
-  color: red;
-}
-.container {
+.middle {
   position: relative;
-  text-align: center;
-  color: white;
+  text-align:center;
+  top: 10px;  
+  left: 100px;
+  
+  font-size: 18px;
+  color: black;
 }
 
-.spellbook{
-   
-    position: absolute;
-	left: 10px;	
-	bottom: 10px;
-	}
+.middle_underneath {
+  position: relative;
+  text-align:center;  
+  top: 70px;  
+  left: 100px;
+  font-size: 18px;
+  color: black;
+}
 body  {
   background-size: cover;
-  background-repeat: no-repeat;
-  background-image: url('1078094-beautiful-the-lich-king-wallpaper-1920x1080-high-resolution.jpg');
+  background-repeat: repeat;
+  background-image: url("ranche.jpg");
   background-color: #FFFFFF;
+  width: 50%;
+  higth: auto;
 }
 </style>
 </head>
-<body>";
+<body>
 
-    echo "<div class='spellbook'>
-        <a href='spellbook.html'><img src='toppng.com-spell-book-674x313.png'></a>
-    </div>
-    <div class=bottom-left>
-        Click the Spellbook for help
-    </div>
-    
+
+<div class=middle>
+	<h1>Ah so you think that you are mighty enough to take me on. Well let’s test your strength, but first, let’s get you a horse.</h1>
+</div>
+<div class=middle_underneath>
+   <h1> Here is the first hint. A hint might not be easy to find or you might find them in some path. To solve this first exercise we will guide you through. You will have to request the getfile that contains horse.jpg. (Getfile might be useful for the rest of the challenge)</h1>
+</div>
+
 </body>
-</html>";
+</html>';
 ?>

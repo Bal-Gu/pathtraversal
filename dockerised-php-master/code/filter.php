@@ -76,7 +76,7 @@ if ($inputquery) {
     }
 
 
-    header("Content-Disposition: attachment; filename='" . basename($file) . "'");
+    header("Content-Disposition: attachment; filename=". basename($file));
     header("Content-Type: application/octet-stream");
     readfile($file);
     die;

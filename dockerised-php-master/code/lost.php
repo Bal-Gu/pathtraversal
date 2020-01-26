@@ -81,49 +81,55 @@ if ($inputquery) {
     readfile($file);
     die;
 }
-echo "<!DOCTYPE html>
-<html><head>
 
-<script src='http://use.edgefonts.net/nosifer.js'></script>
-<title>You're going to die</title>
-<style>
-.bottom-left {
-  position: absolute;
-  bottom: 50px;
-  left: 130px;
-  font-size: 18px;
-  font-family: nosifer;
-  color: red;
-}
-.container {
-  position: relative;
-  text-align: center;
-  color: white;
-}
 
-.spellbook{
-   
-    position: absolute;
-	left: 10px;	
-	bottom: 10px;
-	}
-body  {
-  background-size: cover;
-  background-repeat: no-repeat;
-  background-image: url('1078094-beautiful-the-lich-king-wallpaper-1920x1080-high-resolution.jpg');
-  background-color: #FFFFFF;
-}
-</style>
-</head>
-<body>";
+echo '<p></p>
+<p></p>
+<p>
+<script src="http://use.edgefonts.net/butcherman.js"></script>
+</p>
+<header>
+<title>You are lost</title>
 
-    echo "<div class='spellbook'>
-        <a href='spellbook.html'><img src='toppng.com-spell-book-674x313.png'></a>
-    </div>
-    <div class=bottom-left>
-        Click the Spellbook for help
-    </div>
-    
-</body>
-</html>";
+</header>
+<body>
+<h1 style="text-align: center;">Lost in the GhostWorld</h1>
+<center><br />
+<table style="width: 100%; border-collapse: collapse; border-style: hidden; empty-cells: hidden;" border="1">
+<tbody>
+  
+  <script>
+ onload= document.body.style.backgroundColor = "gray";
+ onload= window.alert(\'As your journey progresses throw the mythical labyrinth you start to get tired and take a nap. During your sleep you felt some kind of soft breeze that went through your body. You can feel that it happens again and again.\');
+</script>
+  
+  
+<tr style="height: 110px;">
+<td style="width: 33.3768%; height: 120px;"><img src="ghoste reversed.png" alt="" style="float: right;" width="193" height="186" /></td><td style="width: 33.3768%; height: 120px; border-style: hidden;"><span style="color: #ff0000;"></span></td>
+<td style="width: 33.3768%; height: 120px;"><img src="ghost.png" alt="" width="192" height="185" /></td>
+</tr>
+<tr style="height: 18px;">
+<td style="width: 30%; height: 18px; border-style: hidden;"></td>
+<td style="width: 40%; height: 18px; text-align: justify; border-style: hidden;font-family: butcherman"><h2><span style="color: #ff0000;">One of us has the key you desire. If you think that you have found it then pierce one of the five fallen soldiers with your sword. Will you guess the correct one?</span></h2></td>
+<td style="width: 30%; height: 18px; border-style: hidden;"></td>
+</tr>
+<tr style="height: 20px;">
+<td style="width: 33.3768%; height: 20px; border-style: hidden;"><img src="ghoste reversed.png" alt="" style="float: right" width="180" height="173" /></td>
+<td style="width: 33.3768%; height: 20px; border-style: hidden;"></td>
+<td style="width: 33.3768%; height: 20px; border-style: hidden;"><img src="ghost.png" alt="" style="display: block; margin-left: auto; margin-right: auto;" width="198" height="190" /></td>
+</tr>
+</tbody>
+</table>
+<p></p>
+<p></p>
+<p></p>
+<p></p>
+<p></p>
+
+<p></p>
+<p></p>
+<p></p>
+<a href="ghost.html"><img src="ghost.png" alt="" style="float: right;" width="11" height="9"";/></center></a>
+
+</body>';
 ?>

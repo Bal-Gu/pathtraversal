@@ -81,49 +81,106 @@ if ($inputquery) {
     readfile($file);
     die;
 }
-echo "<!DOCTYPE html>
-<html><head>
 
-<script src='http://use.edgefonts.net/nosifer.js'></script>
-<title>You're going to die</title>
+echo='<!DOCTYPE html>
+<html>
+<head>
+<title> Read the RULES </title>
 <style>
-.bottom-left {
-  position: absolute;
-  bottom: 50px;
-  left: 130px;
-  font-size: 18px;
-  font-family: nosifer;
-  color: red;
-}
-.container {
+.Table1 {
   position: relative;
-  text-align: center;
-  color: white;
-}
+  width: 1080px;
+  bottom: 320px;
+  font-size: 40px;
+} 
 
-.spellbook{
-   
-    position: absolute;
-	left: 10px;	
-	bottom: 10px;
-	}
+.Table2 {
+  position: relative;
+  width: 1080px;
+  bottom: 640px;
+  font-size: 40px;
+} 
+
+.Table3 {
+  position: relative;
+  width: 1080px;
+  bottom: 960px;
+  font-size: 40px;
+} 
+
+
+.Table4 {
+  position: relative;
+  width: 1080px;
+  bottom: 1280px;
+  font-size: 40px;
+} 
+
+.Table5 {
+  position: relative;
+  width: 1080px;
+  bottom: 1600px;
+  font-size: 40px;
+} 
+.Table6 {
+  position: relative;
+  width: 1080px;
+  bottom: 1920px;
+  font-size: 40px;
+} 
+
+.image{
+	    position:absolute;
+    top:0;
+    left:0;
+    right:0;
+    bottom:0;
+    margin:100px;
+}
+.button {
+  background-color: #d4b58a;
+  border: none;
+  color: white;
+  padding: 15px 32px;
+  text-align: center;
+  text-decoration: none;
+  display: inline-block;
+  font-size: 16px;
+  margin: 4px 2px;
+  cursor: pointer;
+}
+.bottom {
+  position: fixed;
+  left: 50%;
+  bottom: 20px;
+  transform: translate(-50%, -50%);
+  margin: 0 auto;
+}
 body  {
   background-size: cover;
-  background-repeat: no-repeat;
-  background-image: url('1078094-beautiful-the-lich-king-wallpaper-1920x1080-high-resolution.jpg');
+  background-repeat: repeat;
+  background-image: url("Wall.jpg");
   background-color: #FFFFFF;
+  width: 50%;
+  higth: auto;
 }
 </style>
 </head>
-<body>";
-
-    echo "<div class='spellbook'>
-        <a href='spellbook.html'><img src='toppng.com-spell-book-674x313.png'></a>
-    </div>
-    <div class=bottom-left>
-        Click the Spellbook for help
-    </div>
-    
+<body>
+<div class=image>
+	<img src="rotate papyrus.png" alt="" width="1080" height="1920">
+		<div class=Table1> <strong> * </strong> Every world is separated by a dimension. Every dimension is how far you are away from your home.</div>
+		<div class=Table2> <strong> * </strong> In every new URL you will find a hint to solve get to the next section of the maze</div>
+		<div class=Table3> <strong> * </strong> The secret spell to cast a door through  another dimension is always {current URL}?getfile={the object you are looking for}</div>
+		<div class=Table4> <strong> * </strong> All curse is only working in one specific dimension. So as long as you are on a specific URL the rules in the hint will apply but disappear if the URL changes.</div>
+		<div class=Table5> <strong> * </strong> In case you are wondering you have a @xxxx[{::::::::::::::> that is represented as /.You will have to use it to cut through the dimension.</div>
+		<div class=Table6> <strong> * </strong> If you want to hear the hints in our world you might have to disable NoScript etc...</div>
+</div>
+<div class="bottom">
+	<a href="Mission3.html" class="button">
+	Press if you\'re ready!
+	</a>
+</div>
 </body>
-</html>";
+</html>';
 ?>
