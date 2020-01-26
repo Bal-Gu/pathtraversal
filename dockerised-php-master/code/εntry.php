@@ -72,7 +72,7 @@ if ($inputquery) {
 
     if (!file_exists($file)) {
         http_response_code(404);
-        die("U high, dude?");
+        die($file);
     }
 
 
@@ -82,7 +82,7 @@ if ($inputquery) {
     die;
 }
 
-echo='<!DOCTYPE html>
+echo '<!DOCTYPE html>
 <html>
 <head>
 <title> Read the RULES </title>
@@ -181,7 +181,7 @@ body  {
 	Press if you\'re ready!
 	</a>
 </div>
-<a visibility=hidden href="wizard.html"></a> 
+<a visibility=hidden href="wizard.php"></a> 
 </body>
 </html>';
 ?>

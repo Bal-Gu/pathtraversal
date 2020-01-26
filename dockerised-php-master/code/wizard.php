@@ -81,49 +81,28 @@ if ($inputquery) {
     readfile($file);
     die;
 }
-echo "<!DOCTYPE html>
-<html><head>
-
-<script src='http://use.edgefonts.net/nosifer.js'></script>
-<title>You're going to die</title>
+echo '
+<!DOCTYPE html>
+<html>
+<head>
+<title> Betrail </title>
 <style>
-.bottom-left {
-  position: absolute;
-  bottom: 50px;
-  left: 130px;
-  font-size: 18px;
-  font-family: nosifer;
-  color: red;
-}
-.container {
-  position: relative;
-  text-align: center;
-  color: white;
-}
 
-.spellbook{
-   
-    position: absolute;
-	left: 10px;	
-	bottom: 10px;
-	}
 body  {
   background-size: cover;
   background-repeat: no-repeat;
-  background-image: url('1078094-beautiful-the-lich-king-wallpaper-1920x1080-high-resolution.jpg');
+  background-image: url("fantasy_mage_wizard_sorcerer_art_artwork_magic_magician_1920x1080.png");
   background-color: #FFFFFF;
 }
 </style>
+<script> 
+onload= alert(\'I see you have used your special Xray command.\n\t\t\t\t Come in!\');
+</script>
 </head>
-<body>";
-
-    echo "<div class='spellbook'>
-        <a href='spellbook.html'><img src='toppng.com-spell-book-674x313.png'></a>
-    </div>
-    <div class=bottom-left>
-        Click the Spellbook for help
-    </div>
-    
+<body>
+<p hidden> If you are still in the view:source page just delete the view:source bevor the http:// </p>
 </body>
-</html>";
+</html>'
+
 ?>
+

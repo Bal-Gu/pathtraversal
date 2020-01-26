@@ -4,7 +4,7 @@
 </head>
 <body>
 <script type="text/javascript">
-    window.location = "bossbattle.php";
+    window.location = "home.html";
 </script>
 </body>
 </html>

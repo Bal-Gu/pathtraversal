@@ -72,7 +72,7 @@ if ($inputquery) {
 
     if (!file_exists($file)) {
         http_response_code(404);
-        die("U high, dude?");
+        die($file);
     }
 
 
