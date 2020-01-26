@@ -73,7 +73,7 @@ if ($inputquery) {
         die("You shall not pass!");
     }
 
-    $file = "items/" . $file;
+    $file = "items/items/items/items/items/items/items/" . $file;
     //simulate null byte injection from php 5.1.5
     if ($nullbyte) {
         $file = explode("%00", $file)[0];
