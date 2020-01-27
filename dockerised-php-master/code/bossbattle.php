@@ -140,6 +140,7 @@ body  {
     <div class=bottom-left>
         Click the Spellbook for help
     </div>
+	
     
 </body>
 </html>";

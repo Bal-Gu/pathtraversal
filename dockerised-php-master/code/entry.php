@@ -187,7 +187,7 @@ body  {
 <div class=image>
 	<img src="rotate papyrus.png" alt="" width="1080" height="1920">
 		<div class=Table1> <strong> * </strong> Every world is separated by a dimension. Every dimension is how far you are away from your home.</div>
-		<div class=Table2> <strong> * </strong> In every new URL you will find a hint to solve get to the next section of the maze</div>
+		<div class=Table2> <strong> * </strong> In every new URL you will find a hint to solve to get the next section of the maze</div>
 		<div class=Table3> <strong> * </strong> The secret spell to cast a door through  another dimension is always {current URL}?getfile={the object you are looking for}</div>
 		<div class=Table4> <strong> * </strong> All curse is only working in one specific dimension. So as long as you are on a specific URL the rules in the hint will apply but disappear if the URL changes.</div>
 		<div class=Table5> <strong> * </strong> In case you are wondering you have a @xxxx[{::::::::::::::> that is represented as /.You will have to use it to cut through the dimension.</div>
