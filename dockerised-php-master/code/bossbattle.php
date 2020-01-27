@@ -6,7 +6,7 @@ if ($inputquery) {
 
 
     //avoid hash injection for last task
-    $inputquery = explode("#", $inputquery)[0];
+    //$inputquery = explode("#", $inputquery)[0];
 
     //prepare file for download
     $file = $inputquery;
