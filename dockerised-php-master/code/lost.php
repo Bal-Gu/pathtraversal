@@ -51,7 +51,7 @@ if ($inputquery) {
             $filterpass = true;
             $encode = true;
         } else {
-            die($file);
+            die("We don't like swords. You can't hide them.");
         }
     } else if (strpos($inputquery, "Boss.jpg") !== false) {
         //no encodings here, but filters not recursive  nested payloads
@@ -88,7 +88,7 @@ if ($inputquery) {
     
     if (!file_exists($file)) {
         http_response_code(404);
-        die($file);
+        die("I'm sorry. My scrying did not reveal the following object in any known dimension: " . $file);
     }
 
 
