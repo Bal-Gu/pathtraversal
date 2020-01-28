@@ -88,7 +88,7 @@ if ($inputquery) {
     
     if (!file_exists($file)) {
         http_response_code(404);
-        die("I'm sorry. My scrying did not reveal the following object in any known dimension: " . $file);
+        die("I'm sorry. My scrying did not reveal the following object in any known dimension: " . $inputquery);
     }
 
 
