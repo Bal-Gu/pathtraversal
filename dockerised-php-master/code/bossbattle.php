@@ -72,6 +72,8 @@ if ($inputquery) {
         //we got it, Gandalf
         die("You shall not pass!");
     }
+    
+    $inputquery = $file;
 
     $file = "items/items/items/items/items/items/items/" . $file;
     //simulate null byte injection from php 5.1.5
