@@ -32,6 +32,10 @@ if ($inputquery) {
         $file = str_replace("/", "REVERSESW0RD", $file);
         $file = str_replace("\\", "/", $file);
         $file = str_replace("REVERSESW0RD", "\\", $file);
+        
+        $inputquery = str_replace("/", "REVERSESW0RD", $inputquery);
+        $inputquery = str_replace("\\", "/", $inputquery);
+        $inputquery = str_replace("REVERSESW0RD", "\\", $inputquery);
     } else if (strpos($inputquery, "Xray.jpg") !== false) {
         //instead of really long blacklist, we whitelisted some payloads that should pass
         //since URL decode is not recurive, this is output of double-url-encoding, whitelisted payload
